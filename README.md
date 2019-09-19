@@ -1,2 +1,2 @@
 # InfoUI
-A advanced plugin that allows you to see info about your PocketMine-MP server in an UI
+A advanced plugin that allows you to see info about your PocketMine-MP server in an UI. You will need [FormAPI](https://poggit.pmmp.io/p/FormAPI/) in order to run this plugin.
