@@ -15,11 +15,11 @@ use jojoe77777\FormAPI;
 use jojoe77777\FormAPI\SimpleForm;
 class InfoUI extends PluginBase implements Listener {
 	
-	public function onEnable(){
+	public function onEnable() : void{
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 	
-	public function onCommand(CommandSender $sender, Command $cmd, string $label,array $args): bool{
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
 		switch($cmd->getName()){
 			case "info":
 			if(!$sender instanceof Player){
@@ -34,7 +34,7 @@ class InfoUI extends PluginBase implements Listener {
 		return true;
 	}
 	
-	public function mainFrom($sender){
+	public function mainFrom($sender) : void{
 		$form = new SimpleForm(function (Player $player, $data){
 		$result = $data;
 		if($result === null){
