@@ -1,6 +1,9 @@
 <?php
+
 declare(strict_types=1);
+
 namespace InfoUI;
+
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
@@ -13,10 +16,11 @@ use pocketmine\command\ConsoleCommandSender;
 use pocketmine\utils\Config;
 use jojoe77777\FormAPI;
 use jojoe77777\FormAPI\SimpleForm;
+
 class InfoUI extends PluginBase implements Listener {
 	
 	public function onEnable() : void{
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 	
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
